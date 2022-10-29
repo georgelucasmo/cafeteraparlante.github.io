@@ -1,0 +1,21 @@
+@media screen and (min-width: 600px) {
+  footer {
+    background-color: rgb(0, 9, 128);
+  }
+
+  .nav-items {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  footer {
+    background-color: rgb(128, 79, 0);
+  }
+}
+
+@media screen and (min-width: 992px) and (orientation: landscape) {
+  footer {
+    background-color: green;
+  }
+}

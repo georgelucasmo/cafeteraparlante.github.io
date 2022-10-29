@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+html {
+    font-size: 62.5%;
+    /* display: flex; */
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    scroll-snap-align: start;
+    flex-wrap: wrap;
+}
+
+h2 {
+    text-align: center;
+    height: 10vh;
+}
+
+.global-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* oculta barra de desplazamiento la scroll */
+.global-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header y Nav */
+
+.logo {
+    position: relative;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    padding: 0;
+    height: 100px;
+
+}
+
+.nav-container {
+    position: absolute;
+}
+
+.fa-bars {
+    box-sizing: border-box;
+    /* height: 10vh; */
+    /* width: 10vw; */
+}
+
+.fa-solid {
+    background: transparent;
+}
+
+/* Inicio */
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* ver las unidades flex que toma cada item */
+    background-image: url(/img/fondo/dondo-contraste-blur.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+footer {
+    display: flex;
+    background-color: bisque;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 15vh;
+}
+
+/* nosotros */
+
+.nosotros-container {
+    background-color: rgb(0, 255, 110);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* align-content: center;
+    justify-content: center; */
+}
+
+.nosotros-subcontainer {
+    flex: 5 100px;
+    margin: auto;
+    gap: 5vw;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.nosotros-container h2 {
+    flex: 1.5 100px;
+    padding-top: 5vh;
+    height: 100px;
+
+}
+
+/* .nosotros-container p {
+    flex: 1 200px;
+}  */
+
+.nosotros-slider {
+    max-width: 900px;
+    min-width: auto;
+    max-height: 580;
+    min-height: auto;
+    overflow: hidden;
+    flex: 3;
+}
+
+.nosotros-subcontainer p {
+    flex: 1;
+}
+
+.nosotros-slider:first-child {
+    align-self: flex-start;
+}
+
+.nosotros-container ul {
+    display: flex;
+    /* padding: 0; */
+    width: 600%;
+    flex: 3 200px;
+}
+
+.nosotros-container li {
+    list-style: none;
+    width: 100%;
+}
+
+.nosotros-container img {
+    width: 100%;
+}
+
+/* cafe */
+
+.cafe-container {
+    background-color: rgb(255, 153, 0);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.cafe-container h2 {
+    flex: 1 100px;
+}
+
+.cafe-container ul {
+    display: flex;
+    flex: 1 200px;
+}
+
+.cafe-container ul img {
+    height: 200px;
+    border-radius: 100%;
+
+}
+
+.reco-container {
+    flex: 1 200px;
+}
+
+/* postres */
+
+.postres-container {
+    background-color: rgb(47, 0, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postres-container h2 {
+    flex: 1 200px;
+}
+
+.postres-container ul {
+    display: flex;
+    align-items: center;
+    flex: 4 200px;
+}
+
+.postres-container ul {
+    display: flex;
+    align-items: center;
+    flex: 4 200px;
+}
+
+.postres-container ul img {
+    height: 200px;
+    border-radius: 100%;
+}
+
+/* shop */
+
+.shop-container {
+    background-color: rgb(0, 255, 110);
+    display: flex;
+    flex-direction: column;
+}
+
+/* donde */
+
+.donde {
+    background-color: rgb(255, 153, 0);
+    height: 85vh;
+    flex: 1 100px;
+}
+
+/* contacto */
+
+.contacto {
+    background-color: rgb(47, 0, 255);
+    height: 85vh;
+    flex: 1.6 300px;
+}
+
+.newsletter-form {
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.newsletter {
+    padding-bottom: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+
+}
+
+.feedback-input {
+    font-family: "Inter Tight", sans-serif;
+    line-height: 30px;
+    width: calc(100% - 0.5rem);
+    height: 58px;
+    border: 2px solid #6f1d1b;
+    background: transparent;
+    color: #333333;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.submitBut {
+    font-family: "Inter Tight", sans-serif;
+    line-height: 30px;
+    text-align: center;
+    width: 140px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #6f1d1b;
+    color: #ffe6a7;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contacto-donde {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.donde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-items: center; */
+}
+
+.donde h2 {
+    flex: 1 100px;
+    height: 300px;
+}
+
+.frame {
+    flex: 4 200px;
+    height: auto;
+    max-width: auto;
+}
+
+.direccion {
+    flex-wrap: wrap;
+}
